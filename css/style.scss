@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+$colorTitre: #987013;
+//=============================================================================================
+//                          general
+//=============================================================================================
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	font-size: 62.5%;
+
+}
+body{
+    background-color: #07032f;
+    width: 100%;
+
+}
+.titreBoutique{
+    color: $colorTitre;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    font-size: 5rem;
+}
+a{
+    text-transform: none ;
+    color: white;
+}
+
+
+//=============================================================================================
+//                          FORMULAIRES boostrap
+//=============================================================================================
+    .container{
+    height: 100%;
+    align-content: center;
+    }
+    
+    .social_icon span{
+    font-size: 60px;
+    margin-left: 10px;
+    color: #FFC312;
+    }
+    
+    .social_icon span:hover{
+    color: white;
+    cursor: pointer;
+    }
+    
+    .card-header h3{
+    color: white;
+    }
+    
+    .social_icon{
+    position: absolute;
+    right: 20px;
+    top: -45px;
+    }
+    
+    .input-group-prepend span{
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border:0 !important;
+    }
+    
+    input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+    
+    }
+    
+    .remember{
+    color: white;
+    }
+    
+    .remember input
+    {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    }
+    
+    .login_btn{
+    color: black;
+    background-color: #FFC312;
+    width: 100px;
+    }
+    
+    .login_btn:hover{
+    color: black;
+    background-color: white;
+    }
+    
+    .links{
+    color: white;
+    }
+    
+    .links a{
+    margin-left: 4px;
+    }
+
+//=============================================================================================
+//                          HEADER
+//=============================================================================================
+header nav{
+    display: flex;
+}
+
+.navbar{
+    background-image: url(../img/fondHeader.jpg);
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #d1933b81
+}
+
+nav{
+    display: flex;
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 4rem;
+        font-family: 'Righteous', cursive;
+        margin-right: 1.8em;
+    }
+    .formNav{
+        padding-top: 8rem;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 4rem;
+            font-family: 'Righteous', cursive;
+        }
+    }
+    .lienNav{
+        a{
+            color: white;
+            font-size: 4rem;
+            text-decoration: none;
+            font-family: 'Righteous', cursive;
+        }
+
+    }
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+.logo{
+    width: 150px;
+    height: auto;
+}
+.bonjour{
+    color: white;
+    font-size: 3rem;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: white;
+}
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: white;
+}
+//=============================================================================================
+//                          section jeu
+//=============================================================================================
+.jeu{
+    width: 80%;
+    margin: auto;
+    .blocImage{
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        position: relative;
+    }
+    .messageJeu{
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+        position: absolute;
+        font-size: 5rem;
+        color: #1d1548;
+        text-transform: uppercase;
+        border: 1px solid #d1933b81;
+        background-color: #d1933b81;
+        width: 80%;
+        margin-top: 4em;
+        font-family: 'Righteous', cursive;
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .messageJeu:hover{
+        background-color: #1d1548;
+        color: #d1933b81;
+
+    }
+}
+@media (max-width: 652px) {
+    .blocImage .messageJeu{
+        font-size: 3rem;
+
+    }
+}
+@media (max-width: 404px) {
+    .blocImage .messageJeu{
+        margin-top: 1em;
+
+
+    }
+}
+//=============================================================================================
+//                          section société
+//=============================================================================================
+.societe{
+    width: 80%;
+    margin: auto;
+    .titreSte{
+        text-align: center;
+        font-size: 5rem;
+    }
+    .artSte{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+            position: relative;
+        }
+        .messageSte{
+            display: flex;
+            justify-content: center;
+            z-index: 2;
+            position: absolute;
+            font-size: 2.5rem;
+            color: #1d1548;
+            text-transform: uppercase;
+            border: 1px solid #d1933b81;
+            background-color: #d1933b81;
+            width: 80%;
+            top: 0;
+            font-family: 'Righteous', cursive;
+            
+        }
+    }
+}
+.blocSte{
+    margin-top: 5em;
+}
+
+@media (max-width: 770px) {
+    .artSte{
+        margin-top: 5em;
+
+    }
+}
+
+
+//=============================================================================================
+//                          carrousel boutique
+//=============================================================================================
+
+
+/********************************
+* Basics
+*********************************/
+.carousel{
+    h2 {
+        font-size: 1.25rem;
+        margin-top: 0;
+
+    }
+    .card{
+        height: 100%;
+        align-items: center;
+        max-width: 15em;
+        margin: auto;
+    }
+
+    ul {
+        margin: 0 0 1.5rem;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    svg {
+        fill: currentColor;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    img {
+        height: auto;
+        margin-bottom: .5rem;
+        max-width: calc(100% + 2rem);
+        position: relative;
+        left: -1rem;
+        right: -1rem;
+    }
+
+    p {
+        margin: 0 0 .5rem;
+    }
+
+    main {
+        padding: 1rem 2rem;
+        margin: auto;
+    }
+
+    header {
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    .card {
+        border: 1px solid #bac6d3;
+        border-radius: 8px;
+        padding: 1rem;
+        width: 15em;
+    }
+}
+    /********************************
+    * Carousel styles
+    *********************************/
+    .carousel{
+        h2{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+    .carousel-items {
+        display: flex;
+        overflow-x: scroll;
+        padding: 1rem 0;
+        scroll-snap-type: x mandatory;
+    }
+
+    .carousel-item {
+        flex: 1 0 184px;
+        scroll-snap-align: start;
+        margin-right: 0;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar {
+        height: 15px;
+        background-color: #F5F5F5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #3d4852;
+        border-radius: 3px;
+    }
+}
+.carousel img {
+    height: auto;
+    margin-bottom: 0.5rem;
+    max-width: calc(35% + 2rem);
+    position: relative;
+    left: -1rem;
+    right: -1rem;
+}
+
+.carousel .card {
+    border: 1px solid #bac6d3;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 15em;
+    height: 26em;
+}
+
+.card-title{
+    font-family: 'Righteous', cursive;
+    font-size: 4rem;
+}
+
+.card .btn-primary{
+    background-color: #07032f;
+    border-color: #07032f;
+    color: #987013;
+    font-weight: bold;
+    font-size: 2rem;
+    position: absolute;
+    bottom: .5em;    
+}
+.card .descriptionCard{
+    position: absolute;
+    top: 16em;
+    text-align: center;
+    font-weight: bold;
+}
+.card .prixCard{
+    position: absolute;
+    top: 9em;
+    text-align: center;
+    font-weight: bold;
+    background-color: #07032f;
+    color: #987013;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 1.5rem;
+
+}
+
+
+/********************************
+* Breakpoints
+*********************************/
+@media screen and (min-width: 576px) {
+    .carousel-item {
+        flex-basis: 300px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    body,
+    button,
+    input,
+    select,
+    optgroup,
+    textarea {
+        font-size: 1.125rem;
+    }
+
+    h1 {
+        font-size: 2.75rem;
+    }
+
+    .carousel-item {
+        flex-basis: 325px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .carousel-item {
+        flex-basis: 450px;
+    }
+}
+
+/********************************
+ADMIN
+*********************************/
+.listeProduits, .bonjour{
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+.bonjour{
+    text-align: right;
+    font-size: 3rem;
+    font-family: 'Righteous', cursive;
+}
+h1{
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+.formAjout label{
+    color: white;
+    font-style: 2rem;
+    font-family: 'Righteous', cursive;
+}
+.formCate{
+    margin-top: 3em;
+    th{
+        font-size: 3rem;
+    }
+}
+.formAjoutP, .formAjoutC{
+    margin-top: 5em;
+    width: 75%;
+}
+
+
+
+/********************************
+connexion
+*********************************/
+.formConnexion{
+    margin-top: 5em;
+}
+.formInscription{
+    margin-top: 5em;
+}
+
+/********************************
+panier
+*********************************/
+.panier{
+    width: 85%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    margin-top: 5em;
+    border-radius: 10px;
+    table td{
+    font-size: 3rem;
+    color: #987013;
+    font-family: 'Righteous', cursive;
+    }
+    table th{
+        font-size: 5rem;
+        color: #987013;
+        font-family: 'Righteous', cursive;
+        text-transform: uppercase;
+        }
+        .total, .titrePanier{
+            background-color: #fff;
+            margin-top: 2em;
+        }
+        .btnRetirer:hover{
+            background-color: #987013;
+
+        }
+        .btnRetirer a:hover{
+            color: #07032f;
+            text-decoration: none;
+        }
+        .btnVider:hover{
+            background-color: #987013;
+
+        }
+        .btnVider a:hover{
+            color: #07032f;
+            text-decoration: none;
+        }
+    }
+
+
+/********************************
+users
+*********************************/
+.formUser{
+    color: white;
+}
+
+/********************************
+Boutique
+*********************************/
+
+.cardBoutique{
+   margin-left: 0px !important;
+   margin-right: 0px !important;
+   margin-bottom: 2.5em !important;
+
+}
+.blocCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titreBoutique2{
+    color: #987013;
+    font-family: 'Righteous', cursive;
+    text-align: center !important;
+    font-size: 5rem !important;
+    margin-bottom: 1em;
+}
+.cardFlex{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+.pageBoutique{
+    border:  #987013 5px solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 35px #987013;
+}
+.formTri{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.pagination{
+    margin-top: 1em !important;
+    font-size: 3rem;
+    border-radius: 5px;
+}
+/********************************
+Compte
+*********************************/
+.formCompte{
+    font-size: 2rem;
+}
+
+
+// footer
+
+
+// ======================================================
+// main footer lac
+// ======================================================
+
+.footer {
+    max-width: 100%;
+    color: white;
+  
+    .footer1 {
+      display: flex;
+    }
+  
+    .Us {
+      display: flex;
+      flex-direction: row;
+      padding-right: 10px;
+    }
+  
+    i {
+      padding-right: 10px;
+    }
+  
+    .reseaux {
+      padding-left: 10px;
+    }
+  
+    .titleF1 {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding-top: 50px;
+    }
+  
+    .titleF2 {
+      padding-top: 50px;
+      text-transform: uppercase;
+      margin-top: 30px;
+      padding-bottom: 50px;
+  
+    }
+  }
+  
+  .contentF {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .lac {
+    display: flex;
+  
+    .blocLac {
+      width: 45%;
+  
+      .imgLac {
+        max-width: 70%;
+        height: 14vh;
+      }
+    }
+  }
+  
+  // ======================================================
+  // main foooter mer
+  // ======================================================
+  
+
+  footer{
+      background-color: #201e32;
+      margin-top: 10em;
+  }
+  .mer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  
+    .titleF2 {
+      padding-bottom: 50px;
+    }
+  
+    .blocMer {
+      display: flex;
+      flex-direction: row;
+  
+      .imgMer {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        height: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  
+  .end {
+    text-align: center;
+  }
+  
+  @media (max-width: 1226px) {
+    .lac .blocLac .imgLac {
+      height: 8vh;
+    }
+  
+    .textF {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      background-repeat: repeat-y;
+      background-size: auto;
+      background-position: center;
+      height: 100%;
+      max-width: 100% !important;
+    }
+    .titleF1,
+    .titleF2 {
+      text-align: center;
+      font-size: 3rem;
+    }
+  
+    .blocLac img {
+      max-height: 70%
+    }
+  
+    .contentF {
+      width: 100%;
+    }
+  
+    .folo {
+      padding-bottom: 40px;
+    }
+  
+    .textF {
+      font-size: 1rem;
+    }
+  
+    .lac .blocLac .imgLac {
+      height: 6vh;
+    }
+  }
+  .remonter{
+      text-transform: uppercase;
+      text-decoration: none;
+  }
+  .remonter:hover{
+      color:#987013 ;
+  }

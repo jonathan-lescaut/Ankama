@@ -1,0 +1,812 @@
+@import url("https://fonts.googleapis.com/css?family=Numans");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #07032f;
+  width: 100%;
+}
+
+.titreBoutique {
+  color: #987013;
+  font-family: 'Righteous', cursive;
+  text-align: center;
+  font-size: 5rem;
+}
+
+a {
+  text-transform: none;
+  color: white;
+}
+
+.container {
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.social_icon span {
+  font-size: 60px;
+  margin-left: 10px;
+  color: #FFC312;
+}
+
+.social_icon span:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.card-header h3 {
+  color: white;
+}
+
+.social_icon {
+  position: absolute;
+  right: 20px;
+  top: -45px;
+}
+
+.input-group-prepend span {
+  width: 50px;
+  background-color: #FFC312;
+  color: black;
+  border: 0 !important;
+}
+
+input:focus {
+  outline: 0 0 0 0  !important;
+  -webkit-box-shadow: 0 0 0 0 !important;
+          box-shadow: 0 0 0 0 !important;
+}
+
+.remember {
+  color: white;
+}
+
+.remember input {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.login_btn {
+  color: black;
+  background-color: #FFC312;
+  width: 100px;
+}
+
+.login_btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.links {
+  color: white;
+}
+
+.links a {
+  margin-left: 4px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar {
+  background-image: url(../img/fondHeader.jpg);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #d1933b81;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 4rem;
+  font-family: 'Righteous', cursive;
+  margin-right: 1.8em;
+}
+
+nav .formNav {
+  padding-top: 8rem;
+}
+
+nav .formNav a {
+  text-decoration: none;
+  color: white;
+  font-size: 4rem;
+  font-family: 'Righteous', cursive;
+}
+
+nav .lienNav a {
+  color: white;
+  font-size: 4rem;
+  text-decoration: none;
+  font-family: 'Righteous', cursive;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.bonjour {
+  color: white;
+  font-size: 3rem;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: white;
+}
+
+.jeu {
+  width: 80%;
+  margin: auto;
+}
+
+.jeu .blocImage {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jeu img {
+  position: relative;
+}
+
+.jeu .messageJeu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+  position: absolute;
+  font-size: 5rem;
+  color: #1d1548;
+  text-transform: uppercase;
+  border: 1px solid #d1933b81;
+  background-color: #d1933b81;
+  width: 80%;
+  margin-top: 4em;
+  font-family: 'Righteous', cursive;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.jeu .messageJeu:hover {
+  background-color: #1d1548;
+  color: #d1933b81;
+}
+
+@media (max-width: 652px) {
+  .blocImage .messageJeu {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 404px) {
+  .blocImage .messageJeu {
+    margin-top: 1em;
+  }
+}
+
+.societe {
+  width: 80%;
+  margin: auto;
+}
+
+.societe .titreSte {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.societe .artSte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.societe .artSte img {
+  width: 100%;
+  position: relative;
+}
+
+.societe .artSte .messageSte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+  position: absolute;
+  font-size: 2.5rem;
+  color: #1d1548;
+  text-transform: uppercase;
+  border: 1px solid #d1933b81;
+  background-color: #d1933b81;
+  width: 80%;
+  top: 0;
+  font-family: 'Righteous', cursive;
+}
+
+.blocSte {
+  margin-top: 5em;
+}
+
+@media (max-width: 770px) {
+  .artSte {
+    margin-top: 5em;
+  }
+}
+
+/********************************
+* Basics
+*********************************/
+.carousel h2 {
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+
+.carousel .card {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 15em;
+  margin: auto;
+}
+
+.carousel ul {
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+.carousel li {
+  display: inline-block;
+}
+
+.carousel svg {
+  fill: currentColor;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.carousel img {
+  height: auto;
+  margin-bottom: .5rem;
+  max-width: calc(100% + 2rem);
+  position: relative;
+  left: -1rem;
+  right: -1rem;
+}
+
+.carousel p {
+  margin: 0 0 .5rem;
+}
+
+.carousel main {
+  padding: 1rem 2rem;
+  margin: auto;
+}
+
+.carousel header {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.carousel .card {
+  border: 1px solid #bac6d3;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 15em;
+}
+
+/********************************
+    * Carousel styles
+    *********************************/
+.carousel h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.carousel .carousel-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  padding: 1rem 0;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+.carousel .carousel-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 184px;
+          flex: 1 0 184px;
+  scroll-snap-align: start;
+  margin-right: 0;
+}
+
+.carousel ::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+}
+
+.carousel ::-webkit-scrollbar {
+  height: 15px;
+  background-color: #F5F5F5;
+}
+
+.carousel ::-webkit-scrollbar-thumb {
+  background-color: #3d4852;
+  border-radius: 3px;
+}
+
+.carousel img {
+  height: auto;
+  margin-bottom: 0.5rem;
+  max-width: calc(35% + 2rem);
+  position: relative;
+  left: -1rem;
+  right: -1rem;
+}
+
+.carousel .card {
+  border: 1px solid #bac6d3;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 15em;
+  height: 26em;
+}
+
+.card-title {
+  font-family: 'Righteous', cursive;
+  font-size: 4rem;
+}
+
+.card .btn-primary {
+  background-color: #07032f;
+  border-color: #07032f;
+  color: #987013;
+  font-weight: bold;
+  font-size: 2rem;
+  position: absolute;
+  bottom: .5em;
+}
+
+.card .descriptionCard {
+  position: absolute;
+  top: 16em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card .prixCard {
+  position: absolute;
+  top: 9em;
+  text-align: center;
+  font-weight: bold;
+  background-color: #07032f;
+  color: #987013;
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+
+/********************************
+* Breakpoints
+*********************************/
+@media screen and (min-width: 576px) {
+  .carousel-item {
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body,
+  button,
+  input,
+  select,
+  optgroup,
+  textarea {
+    font-size: 1.125rem;
+  }
+  h1 {
+    font-size: 2.75rem;
+  }
+  .carousel-item {
+    -ms-flex-preferred-size: 325px;
+        flex-basis: 325px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .carousel-item {
+    -ms-flex-preferred-size: 450px;
+        flex-basis: 450px;
+  }
+}
+
+/********************************
+ADMIN
+*********************************/
+.listeProduits, .bonjour {
+  color: white;
+  font-family: 'Righteous', cursive;
+}
+
+.bonjour {
+  text-align: right;
+  font-size: 3rem;
+  font-family: 'Righteous', cursive;
+}
+
+h1 {
+  color: white;
+  font-family: 'Righteous', cursive;
+}
+
+.formAjout label {
+  color: white;
+  font-style: 2rem;
+  font-family: 'Righteous', cursive;
+}
+
+.formCate {
+  margin-top: 3em;
+}
+
+.formCate th {
+  font-size: 3rem;
+}
+
+.formAjoutP, .formAjoutC {
+  margin-top: 5em;
+  width: 75%;
+}
+
+/********************************
+connexion
+*********************************/
+.formConnexion {
+  margin-top: 5em;
+}
+
+.formInscription {
+  margin-top: 5em;
+}
+
+/********************************
+panier
+*********************************/
+.panier {
+  width: 85%;
+  margin: auto;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid white;
+  margin-top: 5em;
+  border-radius: 10px;
+}
+
+.panier table td {
+  font-size: 3rem;
+  color: #987013;
+  font-family: 'Righteous', cursive;
+}
+
+.panier table th {
+  font-size: 5rem;
+  color: #987013;
+  font-family: 'Righteous', cursive;
+  text-transform: uppercase;
+}
+
+.panier .total, .panier .titrePanier {
+  background-color: #fff;
+  margin-top: 2em;
+}
+
+.panier .btnRetirer:hover {
+  background-color: #987013;
+}
+
+.panier .btnRetirer a:hover {
+  color: #07032f;
+  text-decoration: none;
+}
+
+.panier .btnVider:hover {
+  background-color: #987013;
+}
+
+.panier .btnVider a:hover {
+  color: #07032f;
+  text-decoration: none;
+}
+
+/********************************
+users
+*********************************/
+.formUser {
+  color: white;
+}
+
+/********************************
+Boutique
+*********************************/
+.cardBoutique {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-bottom: 2.5em !important;
+}
+
+.blocCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titreBoutique2 {
+  color: #987013;
+  font-family: 'Righteous', cursive;
+  text-align: center !important;
+  font-size: 5rem !important;
+  margin-bottom: 1em;
+}
+
+.cardFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2em;
+}
+
+.pageBoutique {
+  border: #987013 5px solid;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 35px #987013;
+          box-shadow: 0px 0px 35px #987013;
+}
+
+.formTri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2em;
+}
+
+.pagination {
+  margin-top: 1em !important;
+  font-size: 3rem;
+  border-radius: 5px;
+}
+
+/********************************
+Compte
+*********************************/
+.formCompte {
+  font-size: 2rem;
+}
+
+.footer {
+  max-width: 100%;
+  color: white;
+}
+
+.footer .footer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .Us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-right: 10px;
+}
+
+.footer i {
+  padding-right: 10px;
+}
+
+.footer .reseaux {
+  padding-left: 10px;
+}
+
+.footer .titleF1 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.footer .titleF2 {
+  padding-top: 50px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+.contentF {
+  width: 80%;
+  margin: auto;
+}
+
+.lac {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lac .blocLac {
+  width: 45%;
+}
+
+.lac .blocLac .imgLac {
+  max-width: 70%;
+  height: 14vh;
+}
+
+footer {
+  background-color: #201e32;
+  margin-top: 10em;
+}
+
+.mer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.mer .titleF2 {
+  padding-bottom: 50px;
+}
+
+.mer .blocMer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mer .blocMer .imgMer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 60%;
+  height: 100%;
+  max-width: 100%;
+}
+
+.end {
+  text-align: center;
+}
+
+@media (max-width: 1226px) {
+  .lac .blocLac .imgLac {
+    height: 8vh;
+  }
+  .textF {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    background-repeat: repeat-y;
+    background-size: auto;
+    background-position: center;
+    height: 100%;
+    max-width: 100% !important;
+  }
+  .titleF1,
+  .titleF2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .blocLac img {
+    max-height: 70%;
+  }
+  .contentF {
+    width: 100%;
+  }
+  .folo {
+    padding-bottom: 40px;
+  }
+  .textF {
+    font-size: 1rem;
+  }
+  .lac .blocLac .imgLac {
+    height: 6vh;
+  }
+}
+
+.remonter {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.remonter:hover {
+  color: #987013;
+}
+/*# sourceMappingURL=style.css.map */

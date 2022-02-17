@@ -1,0 +1,358 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    padding: 0;
+    width: 100%;
+    background-color: #e9db9796
+
+}
+.perso img{
+    height: 30vh;
+    width: 85%;
+}
+
+select{
+    -webkit-appearance:     none;
+    -moz-appearance:        none;
+    appearance:             none;
+    display:        inline-block;
+    cursor:         pointer;
+    padding-left: .7em;
+    color:          rgb(70, 81, 88);
+    font-family:    inherit;
+    font-size:      1em;
+    border:         15px solid #2d5c56;
+    border-radius:  .2em;
+    background-color:     #ebd98a;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAwJyBoZWlnaHQ9JzIwMCcgZmlsbD0iIzAwMDAwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHg9IjBweCIgeT0iMHB4Ij48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNMTIgMThsLTExLjAxOS0xMWgyMi4wMzh6Ii8+PC9zdmc+);
+    background-size: .8em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - .4em) center;
+}
+
+.jouer{    
+    width: 20%;
+    font-size: 1.5rem;
+    color: #987013;
+    font-family: 'Permanent Marker', cursive;
+    background-color:#ebd98a;
+    border:5px solid #2d5c56;
+}
+.choix{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+.jouer{
+    color: #987013;
+    border-radius:  .2em;
+}
+.blocGame{
+    text-align: center;
+    display: flex;
+    .compteurs{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 2rem;
+
+    }
+    
+}
+.com{
+    text-align: center;
+    color: #987013;
+    background-color:#ebd98a;
+    border:7px solid #2d5c56;
+    border-radius:  .2em;
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 4px;
+    font-size: 1.5rem;
+}
+.petiteImg{
+    width: 100%;
+    border-color: #2d5c5600;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+.battle{
+width: 100%;
+}
+.figth{ 
+    display: flex;
+    .image{
+        width: 10%;
+        position: absolute;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    .imageBoot{
+        width: 10%;
+        position: absolute;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    .gamer, .boot{
+        z-index: 1; 
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .messageRigth, .messageLeft{
+        z-index: 2;
+        font-size: 4rem;
+        text-align: center;
+        position: relative;;
+        font-family: 'Permanent Marker', cursive;
+        color: #987013;
+        -webkit-text-stroke: 3px black;
+    }
+    .versus{
+        margin: auto;
+        font-size: 8rem;
+        text-align: center;
+        vertical-align: baseline;
+        z-index: 1;
+    }
+    .compteurGame{
+        display: flex;
+        flex-direction: column; 
+        span{
+            font-size: 1rem;
+        }
+    }
+    .reset, .resetTotal{
+        font-family: 'Permanent Marker', cursive;
+        color: black;
+        padding: 5px;
+        background-color: #ebd98a;
+        border:7px solid #2d5c56;
+        border-radius: 5px;
+
+    }
+    .details{
+        text-align: center;
+        padding: 0px;
+        .compteurs, .truc{
+        font-family: 'Permanent Marker', cursive;
+        color: black;
+        font-size: 2rem;
+        }
+        .truc{
+        font-size: 1rem;
+        }
+    }
+}
+.blocFight{
+    display: flex;
+    justify-content: center;
+}
+.debut{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 2rem;
+}
+.alert{
+    color: black;
+    font-size: 2rem;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+}
+.blocOrdi{
+    display: flex;
+}
+
+.blocParties{
+    margin-top: 5em;
+}
+.comptEgalite span{
+    font-family: 'Permanent Marker', cursive;
+    color: #987013;
+    font-size: 2rem !important;
+}
+
+.blocPetiteImg .petiteImg img{
+    width: 3em;
+}
+.gameChifoumi{
+    display: flex;
+    flex-direction: column;
+}
+.explications{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+.battle .figth .image{
+    margin-top: 1em;
+}
+.battle .figth .blocFight .imageBoot{
+    margin-top: 1em;
+}
+/*===============================================================================================
+MOBILE						
+===============================================================================================*/
+@media screen and (max-width: 1444px){
+
+    .blocGame .compteurs{
+        font-size: 1.3rem;
+    }
+    .jouer{
+        font-size: 1rem;
+    }
+    .figth .messageRigth, .figth .messageLeft{
+        font-size: 2rem;
+       
+    }
+    .com{
+        font-size: 1rem;
+    }
+    .blocParties{
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .perso img {
+        height: 20vh;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 746px){
+    .perso img {
+        width: 30%;
+    }
+    .blocPetiteImg{
+        width: 30%;
+        .petiteImg{
+            width: 30%;
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    .comptV {
+        margin-left: 0em;
+    }
+    .blocGame .persoU{
+        margin-left: 0em;
+        display: flex;
+        justify-content: center;
+    }
+    .blocGame .perso{
+        margin-left: 0em;
+        display: flex;
+        justify-content: center;
+    }
+    .blocGame .comptV{
+        margin-left: 0em;
+    }
+    .blocGame .compteurs{
+        justify-content: center;
+    }
+    .figth .image{
+        width: 30%;
+        margin-top: 0em;
+    }
+    .figth .imageBoot{
+        width: 30%;
+        margin-top: 0em;
+    }
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+
+@media screen and (max-width: 375px){
+
+    .perso img{
+        height: 10vh;
+        width: 30%;
+        display: flex;
+    }
+    .persoU{
+        margin-left: 15em;
+    }
+    .comptV{
+        margin-left: 9em;
+    }
+
+    .choix{
+        font-size: 1rem;
+    }
+    .choix, .jouer {
+        height: 5vh;
+        width: 25%;
+        font-size: 1rem;
+        border:5px solid #2d5c56;
+       
+    }
+    .blocGame{
+        text-align: center;
+        display: flex;
+        .compteurs{
+            display: flex;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+    }
+    .com{
+        font-size: 1rem;
+    }
+    .figth .messageRigth, .figth .messageLeft {
+        z-index: 2;
+        font-size: 2rem;
+        text-align: center;
+        position: relative;
+        font-family: 'Permanent Marker', cursive;
+        color: #987013;
+    }
+    .details{
+        text-align: center;
+        padding: 0px;
+        
+        .compteurs, .truc{
+        font-family: 'Permanent Marker', cursive;
+        color: black;
+        font-size: 0.5rem;
+        }
+        .truc{
+        font-size: 0.2rem;
+        }
+    }
+    .compteurGame{
+        margin-top: 7em;
+    }
+}
+
+    /*===============================================================================================
+    TABLETTE			
+    ===============================================================================================*/
+    @media screen and (max-width: 768px){
+        /*=======================================================
+                    GENERAL
+    ========================================================*/
+        
+    /*=======================================================
+                    HEADER
+    ========================================================*/
+        
+    /*=======================================================
+                    MAIN
+    ========================================================*/
+        
+    /*=======================================================
+                    FOOTER
+    ========================================================*/
+        
+    }
